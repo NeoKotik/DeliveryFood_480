@@ -1,0 +1,12 @@
+<div *ngIf="tags">
+  <a
+    *ngFor="let tag of tags"
+    routerLinkActive="active"
+    routerLink="/tag/{{ tag.name }}"
+  >
+  <div class="tag-image-wrapper">
+    <img [src]="'/assets/food-' + tag.name + '.jpg'" [alt]="tag.name" class="tag-image" >
+    <span class="tag-text">{{ tag.name }}</span>
+  </div>
+  </a>
+</div>

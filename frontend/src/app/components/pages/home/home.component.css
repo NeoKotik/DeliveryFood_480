@@ -1,0 +1,127 @@
+li {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  height: 30rem;
+  margin: 0.5rem;
+  background: rgba(0, 123, 255, 0.1);
+  transition: ease-in 0.3s;
+
+}
+
+li:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+li a img {
+  object-fit: cover;
+  height: 14.5rem;
+  width: 100%; 
+}
+
+.content {
+  color: #0288d1;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.3rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.origins span {
+  border-radius: 2rem;
+  background-color: rgba(0, 123, 255, 0.1);
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #0288d1;
+  margin-right: 0.3rem;
+  padding: 0 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.cook-time {
+  font-size: 0.9rem;
+  flex: 3;
+  text-align: right;
+  color: #0288d1;
+}
+
+.price {
+  border-radius: 1rem;
+  background: rgba(0, 123, 255, 0.1);
+  padding: 0.5rem;
+  color: #0288d1;
+  font-size: 1.1rem;
+  font-weight: bold;
+  max-width: max-content;
+}
+
+.name {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  max-width: 50%;
+  overflow: hidden; 
+  text-align: center;
+  word-wrap: break-word; 
+}
+
+.li {
+  max-height: max-content;
+}
+
+.card-button {
+  align-self: stretch;
+  width: 100%;
+  border: 0px;
+  color: white;
+  background: #0288d1;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  height: 3rem;
+}
+
+.card-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  background: rgb(224, 20, 20); 
+}
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto; 
+}
+
+.home-wrapper-tags {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.home-wrapper-cards-items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}

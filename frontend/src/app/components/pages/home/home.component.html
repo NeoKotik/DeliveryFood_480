@@ -1,0 +1,47 @@
+<div class="home-wrapper">
+  <div class="home-wrapper-tags">
+    <app-tags></app-tags>
+  </div>
+  <app-not-found
+  [visible]="!foods || !foods.length"
+  resetLinkText="Reset Search">
+  </app-not-found>
+  <div class="home-wrapper-cards">
+    <ul>
+      <div class="home-wrapper-cards-items">
+        <li *ngFor="let food of foods">
+          <a routerLink="/food/{{food.id}}">
+            <img [src]="food.imageUrl" [alt]="food.name" />
+            <div class="content">
+              <div class="name">
+                {{food.name | uppercase}}
+              </div>
+              <div class="text">
+                {{ food.text | uppercase}}
+              </div>
+              <div class="price">
+                <span>
+                  {{food.price | currency}}
+                </span>
+              </div>
+              <div class="product-item-footer">
+                <div class="origins">
+                  <span *ngFor="let origin of food.origins">
+                    {{origin | uppercase}}
+                  </span>
+                </div>
+                <div class="cook-time">
+                  <span>🕒</span>
+                  {{food.cookTime}}
+                </div>
+              </div>
+            </div>
+            <button click="$event.stopPropagation();" class="card-button">Add To Cart</button>
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</div>
+
+

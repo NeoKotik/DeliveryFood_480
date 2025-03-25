@@ -1,0 +1,142 @@
+.container {
+  display: flex;  
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center;
+  margin: 2rem;
+}
+
+.container > * {
+  min-width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #2a71d0;
+  border-radius: 1rem;
+  list-style: none;
+  padding: 0;
+  background: #e3f2fd;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #90caf9;
+  padding: 0.75rem;
+}
+
+ul li:last-child {
+  border: none;
+}
+
+li img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100rem;
+  object-fit: cover;
+  border: 2px solid #1565c0;
+}
+
+li div {
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #0d47a1;
+}
+
+li div:not(:first-child) {
+  flex-basis: 18%;
+}
+
+li select {
+  width: 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #1565c0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: transparent;
+  color: #0d47a1;
+}
+
+li .remove-button {
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem;
+  color: #0d47a1;
+  background: #bbdefb;
+  opacity: 0.8;
+  outline: none;
+  transition: 0.3s;
+}
+
+li .remove-button:hover {
+  opacity: 1;
+  cursor: pointer;
+  background: #1565c0;
+  color: white;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 3;
+  height: 20rem;
+  border: 1px solid #2a71d0;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background: #e3f2fd;
+}
+
+.checkout > div {
+  font-size: 1.4rem;
+  margin: 1rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Poppins', sans-serif;
+  color: #0d47a1;
+}
+
+.foods-count {
+  margin-bottom: 1.5rem;
+}
+
+.foods-count::before {
+  content: "Count: ";
+  color: #1565c0;
+}
+
+.total-price::before {
+  content: 'Price: ';
+  color: #1565c0;
+}
+
+.checkout a {
+  padding: 1rem;
+  color: white;
+  background: #1565c0;
+  display: block;
+  width: 99%;
+  border-radius: 1rem;
+  text-align: center;
+  opacity: 0.8;
+  justify-self: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.checkout a:hover {
+  opacity: 1;
+  cursor: pointer;
+  background: #0d47a1;
+}

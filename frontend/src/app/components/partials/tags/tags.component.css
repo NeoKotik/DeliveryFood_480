@@ -1,0 +1,50 @@
+div {
+  margin-top: 15px;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a .active {
+  background-color: red;
+}
+
+.tag-text {
+  position: absolute;
+}
+
+.tag-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.tag-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1px);
+}
+
+a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.tag-text {
+  background-color: #0288d1;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.tag-text:hover {
+  cursor: pointer;
+  background: rgb(224, 20, 20); 
+  color: white;
+}
